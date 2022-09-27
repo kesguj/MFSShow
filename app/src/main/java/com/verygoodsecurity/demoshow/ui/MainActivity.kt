@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var editTextClientId : EditText
     lateinit var editTextLastFourD : EditText
     lateinit var pgsBarView : ProgressBar
-    lateinit var textHash : TextView
+    // lateinit var textHash : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
