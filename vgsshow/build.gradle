@@ -10,8 +10,6 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode VERSION_CODE.toInteger()
-        versionName VERSION_NAME
 
         buildConfigField "String", "VERSION_NAME", "\"${VERSION_NAME}\""
 
