@@ -79,6 +79,7 @@
         android:hint="Cliend ID"
         android:inputType="number"
         android:maxLength="20"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
@@ -92,6 +93,7 @@
         android:hint="Last 4 Digits"
         android:inputType="number"
         android:maxLength="4"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
@@ -111,6 +113,7 @@
         android:layout_width="363dp"
         android:layout_height="205dp"
         android:layout_marginTop="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnViewDetails">
@@ -120,47 +123,71 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/card_image_new1" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/card_image_approved" />
+
+        <TextView
+            android:id="@+id/textViewExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="143dp"
+            android:fontFamily="@font/d_dincond"
+            android:text="Exp."
+            android:textColor="@color/cardview_light_background"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewCVV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="143dp"
+            android:fontFamily="@font/d_dincond"
+            android:text="CVV"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
 
         <com.verygoodsecurity.vgsshow.widget.VGSTextView
             android:id="@+id/infoExpDate"
-            android:layout_width="130dp"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="65dp"
             android:layout_marginTop="143dp"
             app:contentPath="expireDateCardFormat"
-            app:fontFamily="@font/d_dincond"
-            app:hint="Expire Date"
+            app:fontFamily="@font/d_dinconbold"
+            app:gravity="center"
             app:textColor="@android:color/white"
-            app:textSize="24sp"
- />
+            app:textSize="16sp" />
 
         <com.verygoodsecurity.vgsshow.widget.VGSTextView
             android:id="@+id/infoPAN"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="115dp"
             app:contentPath="pan"
             app:fontFamily="@font/d_dincond"
             app:hint="PAN"
             app:textColor="@android:color/white"
             app:textSize="24sp"
-            app:textStyle="bold" />
+            app:textStyle="bold" >
+
+        </com.verygoodsecurity.vgsshow.widget.VGSTextView>
 
         <com.verygoodsecurity.vgsshow.widget.VGSTextView
             android:id="@+id/infoCVV"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="250dp"
+            android:layout_marginLeft="145dp"
             android:layout_marginTop="143dp"
             app:contentPath="cvv"
-            app:fontFamily="@font/d_dincond"
+            app:fontFamily="@font/d_dinconbold"
             app:gravity="center"
-            app:hint="CVV"
             app:textColor="@android:color/white"
-            app:textSize="24sp"
- />
+            app:textSize="16sp" />
 
         <com.verygoodsecurity.vgsshow.widget.VGSTextView
             android:id="@+id/infoName"
@@ -171,8 +198,8 @@
             app:contentPath="name"
             app:fontFamily="@font/d_dinconbold"
             app:hint="Name"
-            app:textColor="@android:color/white"
-            app:textSize="24sp"
+            app:textColor="@color/ic_launcher_mfs_background"
+            app:textSize="20sp"
             app:textStyle="bold" />
 
     </FrameLayout>

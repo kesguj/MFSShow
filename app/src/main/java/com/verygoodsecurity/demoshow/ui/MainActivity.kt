@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var editTextClientId : EditText
     lateinit var editTextLastFourD : EditText
     lateinit var pgsBarView : ProgressBar
-
     lateinit var textHash : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -87,7 +86,7 @@ class MainActivity : AppCompatActivity() {
 
             infoPAN?.addTransformationRegex(
                 "(\\d{4})(\\d{4})(\\d{4})(\\d{4})".toRegex(),
-                "\$1  \$2  \$3  \$4"
+                "\$1    \$2    \$3    \$4"
             )
            //infoPAN?.addTransformationRegex("-".toRegex(), " - ")
 
